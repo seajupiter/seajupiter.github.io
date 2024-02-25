@@ -1,15 +1,19 @@
 html {
     font-size: 10px;
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Quicksand", sans-serif;
 }
 
 p,
 li {
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.2;
+    text-indent: 4ch;
+    text-align: justify;
 }
 
 body {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding: 0 20px 20px 20px;
 }
@@ -23,4 +27,25 @@ h1 {
 h2 {
     font-size: 20px;
     margin: 0;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 10px;
+}
+
+.quicksand-vari {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.raleway-vari {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
