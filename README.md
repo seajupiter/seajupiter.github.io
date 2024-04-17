@@ -1,2 +1,2 @@
-# wyt2357.github.io
+# seahypernova.github.io
 My minimal personal academic homepage.
