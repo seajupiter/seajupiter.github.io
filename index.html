@@ -1,165 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      @font-face {
+        font-family: "bigblue";
+        src: url("BigBlueTerm437NerdFont-Regular.ttf") format("truetype");
+      }
+      body {
+        font-family: "bigblue", monospace;
+        line-height: 1.2em;
+        margin: 0;
+        padding: 1em 1em;
+      }
+      * {
+        width: 97%;
+      }
+      p {
+        font-size: 13pt;
+      }
+      h2,
+      h3,
+      h4 {
+        margin: 0.2em 0;
+        user-select: none;
+      }
+      h2 {
+        text-decoration: underline;
+        margin: 0.5em 0;
+      }
+      ul {
+        list-style: square;
+        padding: 0;
+        margin: 0.5em 1em;
+      }
+      li {
+        margin: 0.1em;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      label.clicker {
+        cursor: pointer;
+        outline: none;
+      }
+      input.clicker {
+        display: none;
+      }
+      input.clicker:checked + div {
+        transition: opacity ease 0.3s;
+      }
+      input.clicker:not(:checked) + div {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+      }
+      html {
+        background: #000000;
+      }
+      body {
+        color: #aaaaaa;
+      }
+      h2 {
+        color: #55ff55;
+      }
+      h3 {
+        color: #55ffff;
+      }
+      h4,
+      b {
+        color: #ffffff;
+      }
+      i {
+        color: #ffff55;
+      }
+      a:link,
+      a:active,
+      a:visited {
+        color: #5555ff;
+      }
+      a.highlight {
+        color: #ffff55;
+      }
+      a:hover,
+      h3:hover {
+        color: #000000;
+        background: #aaaaaa;
+      }
+      ::selection {
+        color: #000000;
+        background: #00aaaa;
+      }
+      ::-moz-selection {
+        color: #000000;
+        background: #00aaaa;
+      }
+      ::-ms-selection {
+        color: #000000;
+        background: #00aaaa;
+      }
+      ::-webkit-selection {
+        color: #000000;
+        background: #00aaaa;
+      }
+      small {
+        font-size: 9pt !important;
+      }
+    </style>
     <title>Yuetian Wu | 吴悦天</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Yuetian Wu</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile.jpg" alt="..." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Yuetian Wu
-                </h1>
-                <div class="subheading mb-5">
-                    No. 5, Yiheyuan Road, Haidian District, Beijing, Peking University <br>
-                    <a href="mailto:wyt2357@stu.pku.edu.cn">wyt2357@stu.pku.edu.cn</a>
-                </div>
-                <p class="lead mb-5">
-                    I'm currently a sophomore in <a
-                        href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm">Turing
-                        class</a> at
-                    <a href="https://eecs.pku.edu.cn/">School of Electronic Engineering and Computer Science(EECS),
-                        Peking
-                        University (PKU EECS) </a>, majoring in computer science.
-                </p>
-                <div class="social-icons"></div>
-                    <a class="social-icon" href="https://github.com/seajupiter"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Research -->
-        <section class="resume-section" id="research">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Research</h2>
-                <p class="lead mb-5">
-                    My primary research interests lie in the field of cryptography, e.g. secure multi-party computation,
-                    consensus and code-based cryptography. In 2024 Spring Semester, I participated in a research program
-                    focused on optimizing Boolean and arithmetic garbled circuits under the guidance of Professor
-                    <a href="https://liutianren.com">Tianren Liu</a>. Previously, I explored various topics in
-                    programming languages. During 2023 Spring and
-                    2024 Fall, I conducted research on verified programming and bidirectional live programming,
-                    respectively, advised by Professor <a href="https://zhenjiang888.github.io">Zhenjiang Hu</a>.
-                </p>
-        </section>
-        <hr class="m-0" />
-        <!-- Publications -->
-        <section class="resume-section" id="publications">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Publications</h2>
-                <p class="lead mb-5">
-                <ul>
-                    <li>
-                        Unfortunately there is currently NOTHING here :(
-                    </li>
-                    <li>
-                        But I believe that there will be something here in the near future! :)
-                    </li>
-                </ul>
-                </p>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Peking University</h3>
-                        <div class="subheading mb-3">Undergraduate</div>
-                        <div>
-                            <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm">Turing
-                                class</a>, Computer Science and Technologies
-                        </div>
-                        <p>GPA: 3.895 (1/34)</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 2022 - now</span></div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Selected Honors and Awards</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2023: 2022-2023 Outstanding Student of Peking University
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2023: Hua Tai Securities Technology Scholarship (10,000 rmb)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2023: PKU XueErSi Boya Scholarship (30,000 rmb)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2022: First-Class Freshman Scholarship of Peking University (50,000 rmb)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2022: Dean's Scholarship for Freshmen in School of Electronic Engineering and Computer Science
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2020: Asia-Pacific Informatics Olympiad, Silver Medal
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2020: National Olympiad in Informatics (in China), Bronze Medal
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
+  </head>
+  <body>
+    <h2>Yuetian Wu</h2>
+    <p>
+      <a href="https://www.pku.edu.cn">Peking University</a><br />
+      <a href="https://eecs.pku.edu.cn/"
+        >School of Electronics Engineering and Computer Science</a
+      ><br />
+      No. 5, Yiheyuan Road, Haidian District, Beijing, China <br />
+      <b>Email:</b> wyt[the first four prime numbers] [at] stu.pku.edu.cn <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[firstname]-[lastname] [at]
+      outlook.com
+    </p>
+    <label for="drop-about" class="clicker"><h3>About me</h3></label>
+    <!-- <input id="drop-about" class="clicker" type="checkbox" /> -->
+    <div>
+      <p>
+        I'm currently a junior in
+        <a
+          href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm"
+          >Turing class</a
+        >(an elite undergraduate program) at School of Electronic Engineering
+        and Computer Science, Peking University (PKU EECS), majoring in computer
+        science.
+      </p>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
+    <label for="drop-research" class="clicker"><h3>Research</h3></label>
+    <input id="drop-research" class="clicker" type="checkbox" />
+    <div>
+      <p>
+        I'm mainly interested in cryptography. During the exchange semester in
+        Fall 2024 at
+        <a href="https://www.cmu.edu">Carnegie Mellon University</a>, I've been
+        privileged to work with Prof.
+        <a href="https://sites.google.com/view/aayushjain/home">Aayush Jain</a>
+        on a project on fine-grained security of lattice-based cryptography. In
+        Spring 2024, I participated in a research program on the optimization of
+        boolean and arithmetic garbled circuits under the instruction of Prof.
+        <a href="https://liutianren.com">Tianren Liu</a>.
+      </p>
 
+      <p>
+        Before that, I was quite curious about topics on programming languages
+        and engaged myself in research on verified programming and bidirectional
+        live programming in the second semester of the 2022-2023 school year and
+        the first semester of the 2023-2024 school year respectively, advised by
+        Prof. <a href="https://zhenjiang888.github.io">Zhenjiang Hu</a>.
+      </p>
+    </div>
+    <label for="drop-publications" class="clicker"><h3>Publications</h3></label>
+    <input id="drop-publications" class="clicker" type="checkbox" />
+    <div>
+      <p>
+        <ul>
+            <li>
+                Unfortunately there is currently NOTHING here :(
+            </li>
+            <li>
+                But I believe that there will be something here in the near future! :)
+            </li>
+        </ul>
+        </p>
+    </div>
+    <label for="drop-education" class="clicker"><h3>Education</h3></label>
+    <input id="drop-education" class="clicker" type="checkbox" />
+    <div>
+      <p>
+        <ul>
+            <li>
+              Peking University <br>
+              Undergraduate <br>
+              Turing Class, Computer Science and Technologies <br> 
+              GPA: 3.895 (1/34) <br>
+              September 2022 - Present
+            </li>
+            <li>
+              Carnegie Mellon University <br>
+              Undergraduate exchange program <br>
+              Computer Science <br> 
+              GPA: 4.0 <br>
+              August 2024 - December 2024
+            </li>
+        </ul>
+        </p>
+    </div>
+    <label for="drop-honors" class="clicker"><h3>Selected Honors and Awards</h3></label>
+    <input id="drop-honors" class="clicker" type="checkbox" />
+    <div>
+      <p>
+        <ul>
+          <li>
+            2024: National Scholarship of China
+          </li>
+          <li>
+            2024: Merit Student Pacesetter of Peking University
+          </li>
+          <li>
+            2023: Merit Student of Peking University
+          </li>
+          <li>
+            2023: Hua Tai Securities Technology Scholarship
+          </li>
+          <li>
+            2023: PKU XueErSi Boya Scholarship
+          </li>
+          <li>
+            2022: First-Class Freshman Scholarship of Peking University
+          </li>
+          <li>
+            2022: Dean's Scholarship for Freshmen in School of Electronic Engineering and Computer Science
+          </li>
+          <li>
+            2020: Asia-Pacific Informatics Olympiad, Silver Medal
+          </li>
+          <li>
+              2020: National Olympiad in Informatics (in China), Bronze Medal
+          </li>
+        </ul>
+        </p>
+    </div>
+    <hr>
+    <small>
+      This webpage borrows the design of <a href="https://people.inf.ethz.ch/dhofheinz/">Dennis Hofheinz's homepage</a>. <br>
+      Deployed on <a href="https://pages.github.com">Github Pages</a>. <br> 
+      Last updated: 2025-01-31.
+    </small>
+  </body>
 </html>
